@@ -13,18 +13,14 @@ function HomePage({ Component }) {
       </Head>
       <div className="header-container">
         <div className="header-logo-container">
-          <h2>JBethuel</h2>
+          <h1>
+            <a className="header-logo" href="/">JBethuel</a>
+          </h1>
         </div>
         <div className="header-menu-container">
-          <span>
-            <a href="/">ABOUT</a>
-          </span>
-          <span>
-            <a href="/blog">BLOG</a>
-          </span>
-          <span>
-            <a href="/contact">CONTACT</a>
-          </span>
+          <a className="header-link" href="/">TECH</a>
+          <a className="header-link" href="/blog">BLOG</a>
+          <a className="header-link" href="/contact">CONTACT</a>
         </div>
       </div>
       <Component />
