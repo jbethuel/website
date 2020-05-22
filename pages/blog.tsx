@@ -1,6 +1,6 @@
 function Blog() {
   return (
-    <h1>BLOG</h1>
+    <p>Will add blog soon. Stay tuned!</p>
   )
 }
 

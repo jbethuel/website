@@ -18,9 +18,9 @@ function HomePage({ Component }) {
           </h1>
         </div>
         <div className="header-menu-container">
-          <a className="header-link" href="/">TECH</a>
-          <a className="header-link" href="/blog">BLOG</a>
+          <a className="header-link" href="/tech">TECH / WORKS</a>
           <a className="header-link" href="/contact">CONTACT</a>
+          <a className="header-link" href="/blog">BLOG</a>
         </div>
       </div>
       <Component />
