@@ -1,12 +1,5 @@
 module.exports = {
-  purge: {
-    // enabled: process.env.NODE_ENV === 'production',
-    // content: [
-    //   './components/**/*.tsx',
-    //   './pages/**/*.tsx'
-    // ],
-    // defaultExtractor: content => content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || []
-  },
+  purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {},
   },
