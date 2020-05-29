@@ -1,11 +1,12 @@
-function Contact() {
+const Contact = () => {
   return (
-    <div>
-      <h2>Contact Me</h2>
-      <ul>
-        <li>jbethueldc@gmail.com</li>
-        <li>github.com/jbethuel</li>
-      </ul>
+    <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5 px-6'>
+      <p className='text-white text-lg'>
+        You can always reach me out @ jbethueldc@gmail.com
+      </p>
+      <p className='text-white text-lg'>
+        Mobile +639958479106
+      </p>
     </div>
   )
 }
