@@ -1,10 +1,10 @@
-import React, { Fragment, ReactElement } from 'react'
+import React, { Fragment, ReactNode } from 'react'
 import Head from 'next/head'
 
 import Navbar from '../client/components/navbar'
 import '../client/tailwind.css'
 
-const HomePage = ({ Component, pageProps }): ReactElement => {
+const HomePage = ({ Component, pageProps }): ReactNode => {
   return (
     <Fragment>
       <Head>

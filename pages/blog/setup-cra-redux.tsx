@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react'
+import React, { ReactNode } from 'react'
 
-const Article = (): ReactElement => {
+const Article = (): ReactNode => {
   return (
     <div>
       <h1>TODO..</h1>

@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react'
+import React, { ReactNode } from 'react'
 
-const Contact = (): ReactElement => {
+const Contact = (): ReactNode => {
   return (
     <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5 px-6'>
       <p className='text-white text-lg'>

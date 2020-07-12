@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react'
+import React, { ReactNode } from 'react'
 
-const Tech = (): ReactElement => {
+const Tech = (): ReactNode => {
   return (
     <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5'>
       <div className='flex flex-wrap px-6'>
