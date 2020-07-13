@@ -8,11 +8,9 @@ const Home = (): ReactNode => {
         Software engineer based at Cagayan de Oro City, Philippines.
       </p>
       <p className='text-white px-6 mt-4'>
-        I have been software engineer for about 3+ years in a startup company
-        which was founded and operating locally. This is my first job and
-        designated as a mobile software engineer using React Native. Even though
-        I am working on mobile app, I also worked on backend stuffs for the
-        features that we implemented.
+        I have been a software engineer for more than 3 years in a startup company which was founded locally and the said company is currently operating in 6 cities here in the Philippines.
+        It is my first job and I am designated as a mobile software engineer using React Native.
+        Event hough I am working on a mobile app, I have also worked on its backend features.
       </p>
     </div>
   )
