@@ -2,6 +2,8 @@ import React, { ReactNode } from 'react'
 import CategorySelector from '../../client/components/category-selector'
 import BlogItem from '../../client/components/blog-item'
 
+import SEO from '../../components/seo'
+
 const BlogItems = [
   // {
   //   key: Math.random().toString(),
@@ -24,25 +26,28 @@ type BlogItem = {
 
 const Blog = (): ReactNode => {
   return (
-    <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5 px-6'>
-      <div className='sm:w-full md:w-1/2 lg:w-1/2'>
-        <CategorySelector />
-      </div>
-      {BlogItems.length === 0 &&
-        <div className='mt-6'>
-          <h2 className='text-lg text-white'>NO ENTRIES YET.</h2>
+    <>
+      <SEO />
+      <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5 px-6'>
+        <div className='sm:w-full md:w-1/2 lg:w-1/2'>
+          <CategorySelector />
         </div>
-      }
-      {BlogItems.map((each: BlogItem) => (
-        <BlogItem
-          key={each?.key}
-          url={each?.url}
-          title={each?.title}
-          date={each?.date}
-          subtitle={each?.subtitle}
-        />
-      ))}
-    </div>
+        {BlogItems.length === 0 && (
+          <div className='mt-6'>
+            <h2 className='text-lg text-white'>NO ENTRIES YET.</h2>
+          </div>
+        )}
+        {BlogItems.map((each: BlogItem) => (
+          <BlogItem
+            key={each?.key}
+            url={each?.url}
+            title={each?.title}
+            date={each?.date}
+            subtitle={each?.subtitle}
+          />
+        ))}
+      </div>
+    </>
   )
 }
 

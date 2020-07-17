@@ -1,10 +1,15 @@
 import React, { ReactNode } from 'react'
 
+import SEO from '../../components/seo'
+
 const Article = (): ReactNode => {
   return (
-    <div>
-      <h1>TODO..</h1>
-    </div>
+    <>
+      <SEO />
+      <div>
+        <h1>TODO..</h1>
+      </div>
+    </>
   )
 }
 
