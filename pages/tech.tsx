@@ -1,11 +1,13 @@
 import React, { ReactNode } from 'react'
 
+import Navbar from '../components/navbar'
 import SEO from '../components/seo'
 
 const Tech = (): ReactNode => {
   return (
     <>
       <SEO />
+      <Navbar />
       <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5'>
         <div className='flex flex-wrap px-6'>
           <div className='w-1/2 mb-4 text-white'>

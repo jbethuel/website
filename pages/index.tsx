@@ -1,11 +1,13 @@
 import React, { ReactNode } from 'react'
 
+import Navbar from '../components/navbar'
 import SEO from '../components/seo'
 
 const Home = (): ReactNode => {
   return (
     <>
       <SEO />
+      <Navbar />
       <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5'>
         <p className='text-white px-6'>
           Hello! I'm Joseph Bethuel Dela Cruz, <br />a software engineer based

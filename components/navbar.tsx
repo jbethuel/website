@@ -1,6 +1,6 @@
-import React, { useState, ReactElement } from 'react'
+import React, { useState } from 'react'
 
-const Header = (): ReactElement => {
+const Header = () => {
   const [isOpen, set] = useState(false)
   return (
     <header className='bg-gray-900 container mx-auto mt-4 lg:w-1/2 md:w-4/5 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3'>

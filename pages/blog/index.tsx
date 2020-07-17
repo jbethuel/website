@@ -1,8 +1,9 @@
 import React, { ReactNode } from 'react'
-import CategorySelector from '../../client/components/category-selector'
-import BlogItem from '../../client/components/blog-item'
 
+import CategorySelector from '../../components/category-selector'
+import BlogItem from '../../components/blog-item'
 import SEO from '../../components/seo'
+import Navbar from '../../components/navbar'
 
 const BlogItems = [
   // {
@@ -28,6 +29,7 @@ const Blog = (): ReactNode => {
   return (
     <>
       <SEO />
+      <Navbar />
       <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5 px-6'>
         <div className='sm:w-full md:w-1/2 lg:w-1/2'>
           <CategorySelector />
