@@ -26,6 +26,7 @@ const Article = (): ReactNode => {
           <a
             className='underline'
             href='https://nextjs.org/docs/getting-started'
+            target='_blank'
           >
             NextJS docs
           </a>
@@ -63,7 +64,11 @@ const Article = (): ReactNode => {
           If you don't have any experience with Git, Learn Git first. Everybody
           uses it in real world and it is a MUST have skill in software
           development. This is a good youtube video I recommend to watch. &nbsp;
-          <a href='https://www.youtube.com/watch?v=RGOj5yH7evk'>
+          <a
+            target='_blank'
+            className='underline'
+            href='https://www.youtube.com/watch?v=RGOj5yH7evk'
+          >
             https://www.youtube.com/watch?v=RGOj5yH7evk
           </a>
         </p>
@@ -100,21 +105,25 @@ const Article = (): ReactNode => {
           <Code text='jbethuel.com' />.
         </p>
         <p>
-          I bought mine at <a href='namecheap.com'>namecheap.com</a> for $5. For
-          this, you should have your credit card ready. After purchasing your
-          own domain, netlify and namecheap needs a little bit of configuration.
-          This guide will help you
+          I bought mine at{' '}
+          <a target='_blank' href='https://namecheap.com' className='underline'>
+            namecheap.com
+          </a>{' '}
+          for $5. For this, you should have your credit card ready. After
+          purchasing your own domain, netlify and namecheap needs a little bit
+          of configuration. This guide will help you
         </p>
         <p className='mt-2'>
           <a
             target='_blank'
             href='https://dev.to/easybuoy/setting-up-domain-with-namecheap-netlify-1a4d'
+            className='underline'
           >
             https://dev.to/easybuoy/setting-up-domain-with-namecheap-netlify-1a4d
           </a>
         </p>
 
-        <p className='text-2xl mt-8'>CHEERS 🍻</p>
+        <p className='text-2xl mt-8 font-bold'>CHEERS 🍻</p>
 
         <div className='h-40' />
       </Container>
