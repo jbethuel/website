@@ -10,9 +10,8 @@ const Home = (): ReactNode => {
       <Navbar />
       <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5'>
         <p className='text-white px-6'>
-          Hello! I'm Joseph Bethuel Dela Cruz, <br />a software engineer based
-          at Cagayan de Oro City, Philippines. Software engineer based at
-          Cagayan de Oro City, Philippines.
+          Hello! I'm Joseph Bethuel Dela Cruz, <br />
+          Software engineer based at Cagayan de Oro City, Philippines.
         </p>
         <p className='text-white px-6 mt-4'>
           I have been a software engineer for more than 3 years in a startup
