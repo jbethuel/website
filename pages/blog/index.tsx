@@ -1,36 +1,28 @@
 import React, { ReactNode } from 'react'
 
+import Container from '../../components/container'
 import CategorySelector from '../../components/category-selector'
 import BlogItem from '../../components/blog-item'
 import SEO from '../../components/seo'
 import Navbar from '../../components/navbar'
 
 const BlogItems = [
-  // {
-  //   key: Math.random().toString(),
-  //   type: 'tech',
-  //   url: '/blog/setup-cra-redux',
-  //   title: 'Setup your CRA Redux with cleaner code',
-  //   date: 'June 11, 2020',
-  //   subtitle: 'Very minimal setup with using redux-toolkit and hooks.'
-  // }
+  {
+    key: '1',
+    type: 'tech',
+    url: '/blog/own-website',
+    title: 'Personal website/blog with NextJS and Netlify',
+    date: 'August 8, 2020',
+    subtitle: 'Write and deploy your own website/blog for FREE like this blog.'
+  }
 ]
-
-type BlogItem = {
-  key: string
-  type: string
-  url: string
-  title: string
-  date: string
-  subtitle: string
-}
 
 const Blog = (): ReactNode => {
   return (
     <>
       <SEO />
       <Navbar />
-      <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5 px-6'>
+      <Container>
         <div className='sm:w-full md:w-1/2 lg:w-1/2'>
           <CategorySelector />
         </div>
@@ -39,16 +31,16 @@ const Blog = (): ReactNode => {
             <h2 className='text-lg text-white'>NO ENTRIES YET.</h2>
           </div>
         )}
-        {BlogItems.map((each: BlogItem) => (
+        {BlogItems.map(each => (
           <BlogItem
-            key={each?.key}
-            url={each?.url}
-            title={each?.title}
-            date={each?.date}
-            subtitle={each?.subtitle}
+            key={each.key}
+            url={each.url}
+            title={each.title}
+            date={each.date}
+            subtitle={each.subtitle}
           />
         ))}
-      </div>
+      </Container>
     </>
   )
 }
