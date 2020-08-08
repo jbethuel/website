@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 import Navbar from '../components/navbar'
 import SEO from '../components/seo'
 
-const Home = (): ReactNode => {
+const Home = () => {
   return (
     <>
       <SEO />
@@ -17,9 +17,9 @@ const Home = (): ReactNode => {
           I have been a software engineer for more than 3 years in a startup
           company which was founded locally and the said company is currently
           operating in 6 cities here in the Philippines. It is my first job and
-          I am designated as a mobile software engineer using React Native.
-          Eventhough I am working on a mobile app, I have also worked on its
-          backend features.
+          I am designated as a mobile software engineer using React Native. Even
+          though I am working on a mobile app, I have also worked on its backend
+          features.
         </p>
       </div>
     </>

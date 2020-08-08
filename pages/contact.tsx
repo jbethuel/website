@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 import Navbar from '../components/navbar'
 import SEO from '../components/seo'
 
-const Contact = (): ReactNode => {
+const Contact = () => {
   return (
     <>
       <SEO />

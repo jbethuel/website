@@ -1,14 +1,14 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 import Container from '../../components/container'
 import CategorySelector from '../../components/category-selector'
-import BlogItem from '../../components/blog-item'
+import BlogItem, { IBlogItem } from '../../components/blog-item'
 import SEO from '../../components/seo'
 import Navbar from '../../components/navbar'
 
-const BlogItems = [
+const BlogItems: IBlogItem[] = [
   {
-    key: '1',
+    id: '1',
     type: 'tech',
     url: '/blog/own-website',
     title: 'Personal website/blog with NextJS and Netlify',
@@ -17,7 +17,7 @@ const BlogItems = [
   }
 ]
 
-const Blog = (): ReactNode => {
+const Blog = () => {
   return (
     <>
       <SEO />
@@ -31,14 +31,17 @@ const Blog = (): ReactNode => {
             <h2 className='text-lg text-white'>NO ENTRIES YET.</h2>
           </div>
         )}
-        {BlogItems.map(each => (
-          <BlogItem
-            key={each.key}
-            url={each.url}
-            title={each.title}
-            date={each.date}
-            subtitle={each.subtitle}
-          />
+        {BlogItems.map((each, index) => (
+          <div key={index}>
+            <BlogItem
+              id={index.toString()}
+              type={each.type}
+              url={each.url}
+              title={each.title}
+              date={each.date}
+              subtitle={each.subtitle}
+            />
+          </div>
         ))}
       </Container>
     </>

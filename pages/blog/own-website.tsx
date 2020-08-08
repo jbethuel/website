@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 import Title from '../../components/title'
 import Container from '../../components/container'
@@ -9,7 +9,7 @@ import { netlify, scripts } from '../../components/code'
 
 const Code = ({ text }) => <span className='bg-black p-1'>{text}</span>
 
-const Article = (): ReactNode => {
+const Article = () => {
   return (
     <>
       <SEO />

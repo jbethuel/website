@@ -1,8 +1,9 @@
 import React, { ReactElement } from 'react'
 import Link from 'next/link'
 
-interface IBlogItem {
-  key: string
+export interface IBlogItem {
+  id: string
+  type: string
   url: string
   title: string
   date: string
@@ -10,14 +11,14 @@ interface IBlogItem {
 }
 
 const BlogItem = ({
-  key,
+  id,
   url,
   title,
   date,
   subtitle
 }: IBlogItem): ReactElement => {
   return (
-    <div className='my-10 h-24 p-2' key={key}>
+    <div className='mt-5 mb-10 h-24 p-2' key={id}>
       <Link href={url}>
         <a className='text-white text-2xl font-bold'>{title}</a>
       </Link>

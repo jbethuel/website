@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import Select from 'react-select'
 
 const categories = [{ value: 'tech', label: 'Technology / Development' }]
 
-const CategorySelector = (): ReactElement => {
+const CategorySelector = () => {
   return (
     <Select
       options={categories}
