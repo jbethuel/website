@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "develop": "next",
+    "dev": "next",
     "build": "next build",
     "export": "next export",
     "start": "next start"

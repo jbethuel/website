@@ -2,13 +2,14 @@ import React from 'react'
 
 import Navbar from '../components/navbar'
 import SEO from '../components/seo'
+import Container from '../components/container'
 
 const Home = () => {
   return (
     <>
       <SEO />
       <Navbar />
-      <div className='container mx-auto mt-4 lg:w-1/2 md:w-4/5'>
+      <Container>
         <p className='text-white px-6'>
           Hello! I'm Joseph Bethuel Dela Cruz, <br />
           Software engineer based at Cagayan de Oro City, Philippines.
@@ -21,7 +22,7 @@ const Home = () => {
           though I am working on a mobile app, I have also worked on its backend
           features.
         </p>
-      </div>
+      </Container>
     </>
   )
 }

@@ -39,10 +39,22 @@ const Header = () => {
       <nav className={`sm:block ${isOpen ? 'block' : 'hidden'}`}>
         <div className='px-2 pt-2 pb-4 sm:flex sm:p-0'>
           <a
+            href='/gear'
+            className='block px-2 py-1 text-white text-right font-semibold rounded hover:bg-white hover:text-gray-900'
+          >
+            GEAR
+          </a>
+          <a
             href='/tech'
             className='block px-2 py-1 text-white text-right font-semibold rounded hover:bg-white hover:text-gray-900'
           >
-            TECH / WORKS
+            TECH
+          </a>
+          <a
+            href='/work'
+            className='block px-2 py-1 text-white text-right font-semibold rounded hover:bg-white hover:text-gray-900'
+          >
+            WORK
           </a>
           <a
             href='/contact'
