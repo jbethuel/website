@@ -22,7 +22,7 @@ const Gear = () => {
           </a>
         </p>
         <p className='text-white px-6 mt-2'>
-          • Logitech M720 Triathlon <br />
+          • Logitech M720 <br />
           <a
             className='underline'
             target='_blank'
@@ -33,7 +33,7 @@ const Gear = () => {
           </a>
         </p>
         <p className='text-white px-6 mt-2'>
-          • Logitech K380 Bluetooth Keyboard <br />
+          • Logitech K380 <br />
           <a
             className='underline'
             target='_blank'
