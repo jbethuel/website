@@ -1,0 +1,24 @@
+@import "./include-media";
+
+.responsive-sample {
+  height: 100vh;
+  width: 100%;
+
+  @include media("<=425px") {
+    &:before {
+      content: "MOBILE VIEW";
+    }
+  }
+
+  @include media(">425px", "<=768px") {
+    &:before {
+      content: "TABLET VIEW";
+    }
+  }
+
+  @include media(">768px") {
+    &:before {
+      content: "DESKTOP VIEW";
+    }
+  }
+}

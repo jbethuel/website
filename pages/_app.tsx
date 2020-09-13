@@ -1,13 +1,7 @@
-import React from 'react'
-import App from 'next/app'
+import "../styles/index.scss";
 
-import '../components/tailwind.css'
-
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
-  }
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
