@@ -1,15 +1,15 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 interface Props {
-  title?: string;
-  description?: string;
+  title?: string
+  description?: string
 }
 
 // todo tags
 // https://htmlhead.dev/
 export default ({
-  title = "JBethuel - Software Engineer",
-  description = "JBethuel - Software Engineer",
+  title = 'JBethuel - Software Engineer',
+  description = 'JBethuel - Software Engineer'
 }: Props) => (
   <Head>
     <meta charSet="utf-8" />
@@ -49,4 +49,4 @@ export default ({
 
     <title>{title}</title>
   </Head>
-);
+)
