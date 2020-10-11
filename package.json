@@ -7,6 +7,14 @@
     "name": "jbethuel",
     "url": "https://github.com/jbethuel"
   },
+  "prettier": {
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

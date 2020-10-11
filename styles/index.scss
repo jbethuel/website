@@ -1,6 +1,17 @@
-@use "responsive-sample";
+// utils
+@use "utils/viewport";
+
+// pages
+@use "pages/responsive-sample";
+
+// components
+@use "components/page" as page;
 @use "components/navbar";
 
+// colors
+@import "utils/colors";
+
+// reset default styles
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -8,13 +19,15 @@
 }
 
 body.light-mode {
-  background-color: #fff;
-  color: #333;
+  @include page.container;
+  background-color: $dark-background;
+  color: $dark-color;
   transition: background-color 0.3s ease;
 }
 
 body.dark-mode {
-  background-color: #1a1919;
-  color: #999;
+  @include page.container;
+  background-color: $light-background;
+  color: $light-color;
   transition: background-color 0.3s ease;
 }
