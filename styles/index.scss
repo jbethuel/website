@@ -8,7 +8,8 @@
 @use "components/page" as page;
 @use "components/navbar";
 
-// colors
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import "utils/colors";
 
 // reset default styles
@@ -20,14 +21,17 @@
 
 body.light-mode {
   @include page.container;
-  background-color: $dark-background;
-  color: $dark-color;
+  font-family: Hack, monospace;
+  background-color: $light-background;
+  color: $light-color;
   transition: background-color 0.3s ease;
+
 }
 
 body.dark-mode {
   @include page.container;
-  background-color: $light-background;
-  color: $light-color;
+  font-family: Hack, monospace;
+  background-color: $dark-background;
+  color: $dark-color;
   transition: background-color 0.3s ease;
 }

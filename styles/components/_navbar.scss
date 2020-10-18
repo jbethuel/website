@@ -1,4 +1,53 @@
-// .page {
-//   height: 100vh;
-//   width: 100%;
-// }
+@import "../utils/colors";
+
+.navbar {
+  height: 5rem;
+  margin-top: 2rem;
+
+  display: grid;
+  grid-template-areas:
+    "title toggle"
+    "menu .";
+
+  .title {
+    grid-area: title;
+    font-size: 2.25rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .menu {
+    grid-area: menu;
+
+    .divider {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+
+    .link {
+      text-decoration: none;
+    }
+    .link:hover {
+      color: black
+      // text-decoration: dashed;
+    }
+
+  }
+
+  .toggle {
+    grid-area: toggle;
+    justify-self: center;
+  }
+
+}
+
+.dark-mode .navbar {
+  .menu .link {
+    color: $dark-color
+  }
+}
+
+.light-mode .navbar {
+  .menu .link {
+    color: $light-color
+  }
+}
