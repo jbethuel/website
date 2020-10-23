@@ -12,6 +12,7 @@
   .title {
     grid-area: title;
     font-size: 2.25rem;
+    cursor: pointer;
   }
   .toggle {
     grid-area: toggle;
