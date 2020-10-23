@@ -12,32 +12,33 @@
   .title {
     grid-area: title;
     font-size: 2.25rem;
-    letter-spacing: 0.05rem;
   }
+  .toggle {
+    grid-area: toggle;
 
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu {
     grid-area: menu;
+    margin-top: 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .link {
+      margin-right: 0.5rem;
+      margin-bottom: 0.35rem;
+
+      text-decoration: none;
+      font-size: 1.10rem;
+    }
 
     .divider {
       margin-right: 0.5rem;
-      margin-left: 0.5rem;
+      margin-bottom: 0.35rem;
     }
-
-    .link {
-      text-decoration: none;
-    }
-    .link:hover {
-      color: black
-      // text-decoration: dashed;
-    }
-
   }
-
-  .toggle {
-    grid-area: toggle;
-    justify-self: center;
-  }
-
 }
 
 .dark-mode .navbar {

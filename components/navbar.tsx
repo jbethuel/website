@@ -1,21 +1,34 @@
+import React from 'react'
 import useDarkMode from 'use-dark-mode'
-import { Moon, Sun } from '@blog/icon'
+import { useRouter } from 'next/router'
+import { moon, sun, WithIcon } from '@blog/icon'
+import { dark, light } from 'utils/colors'
 
+interface ToggleIcon {
+  onClick: () => void
+}
+
+const Sun = (args: ToggleIcon) => (
+  <WithIcon color={light.color} icon={sun} onClick={args.onClick} size={40} />
+)
+const Moon = (args: ToggleIcon) => (
+  <WithIcon color={dark.color} icon={moon} onClick={args.onClick} size={40} />
+)
 const divider = <span className="divider">•</span>
 
 const Navbar = () => {
+  const router = useRouter()
   const theme = useDarkMode(true)
   const isDarkMode = theme.value
+  const toggle = () => theme.toggle
   return (
     <nav className="navbar">
-      <div className="title">JBethuel</div>
+      <div className="title" onClick={() => router.push('/')}>
+        JBethuel
+      </div>
       <div className="menu">
-        <a href="/about" className="link">
-          ABOUT
-        </a>
-        {divider}
-        <a href="/work" className="link">
-          WORK
+        <a href="/tech" className="link">
+          TECH
         </a>
         {divider}
         <a href="/contact" className="link">
@@ -32,7 +45,7 @@ const Navbar = () => {
       </div>
       {typeof window !== 'undefined' && (
         <div className="toggle" onClick={() => theme.toggle()}>
-          {isDarkMode ? Moon : Sun}
+          {isDarkMode ? <Moon onClick={toggle} /> : <Sun onClick={toggle} />}
         </div>
       )}
     </nav>

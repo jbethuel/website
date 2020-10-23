@@ -2,14 +2,14 @@ import React from 'react'
 import Head from '@blog/head'
 import Navbar from '@blog/navbar'
 
-const About = () => {
+const Blog = () => {
   return (
     <div className="page">
       <Head />
       <Navbar />
-      ABOUT
+      Blog
     </div>
   )
 }
 
-export default About
+export default Blog
