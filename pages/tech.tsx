@@ -7,7 +7,7 @@ const Work = () => {
     <div className="page">
       <Head />
       <Navbar />
-      Work
+      <main className="home">Work in progres..</main>
     </div>
   )
 }

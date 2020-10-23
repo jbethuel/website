@@ -3,6 +3,8 @@
 
 // pages
 @use "pages/responsive-sample";
+@use "pages/home.scss";
+@use "pages/gear.scss";
 
 // components
 @use "components/page" as page;

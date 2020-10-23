@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="page">
       <Head />
       <Navbar />
-      Contact
+      <main className="home">Work in progres..</main>
     </div>
   )
 }
