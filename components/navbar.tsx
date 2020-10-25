@@ -27,19 +27,19 @@ const Navbar = () => {
         JBethuel
       </div>
       <div className="menu">
-        <a href="/tech" className="link">
+        <a className="link" onClick={() => router.push('/tech')}>
           TECH
         </a>
         {divider}
-        <a href="/contact" className="link">
+        <a className="link" onClick={() => router.push('/contact')}>
           CONTACT
         </a>
         {divider}
-        <a href="/blog" className="link">
+        <a href="/blog" className="link" onClick={() => router.push('/blog')}>
           BLOG
         </a>
         {divider}
-        <a href="/gear" className="link">
+        <a href="/gear" className="link" onClick={() => router.push('/gear')}>
           GEAR
         </a>
       </div>
