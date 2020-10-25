@@ -35,11 +35,11 @@ const Navbar = () => {
           CONTACT
         </a>
         {divider}
-        <a href="/blog" className="link" onClick={() => router.push('/blog')}>
+        <a className="link" onClick={() => router.push('/blog')}>
           BLOG
         </a>
         {divider}
-        <a href="/gear" className="link" onClick={() => router.push('/gear')}>
+        <a className="link" onClick={() => router.push('/gear')}>
           GEAR
         </a>
       </div>
