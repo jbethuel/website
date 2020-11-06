@@ -7,7 +7,13 @@ const Contact = () => {
     <div className="page">
       <Head />
       <Navbar />
-      <main className="home">Work in progres..</main>
+      <main className="contact">
+        <p>You can always reach me out at</p>
+        <div className="details">
+          <p>email: jbethueldc@gmail.com</p>
+          <p>mobile: +639958479106</p>
+        </div>
+      </main>
     </div>
   )
 }

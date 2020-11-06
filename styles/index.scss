@@ -3,8 +3,10 @@
 
 // pages
 @use "pages/responsive-sample";
-@use "pages/home.scss";
-@use "pages/gear.scss";
+@use "pages/home";
+@use "pages/gear";
+@use "pages/contact";
+@use "pages/tech";
 
 // components
 @use "components/page" as page;

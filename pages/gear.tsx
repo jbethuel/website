@@ -20,7 +20,7 @@ const Gear = () => {
         <div className="specs">
           <p>- Ryzen 5 2600</p>
           <p>- Asus TUF GTX 1660 Super</p>
-          <p>- Corsair Vengeance LPX 16GB(2x8) @3200hz</p>
+          <p>- Corsair Vengeance LPX 16GB 3200hz</p>
           <p>- Kingston A2000 NVMe 256GB SSD</p>
         </div>
       </main>
