@@ -1,11 +1,15 @@
-.gear {
+.gears {
   font-size: 18px;
 
-  .title {
-    margin-top: 0.5rem;
-  }
+  .gear {
+    margin: 1.5rem 0rem;
 
-  .specs {
-    margin-top: 0.5rem;
+    .title {
+      margin-top: 0.5rem;
+    }
+
+    .specs {
+      margin-top: 0.5rem;
+    }
   }
 }

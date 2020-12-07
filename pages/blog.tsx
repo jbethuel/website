@@ -7,7 +7,7 @@ const Blog = () => {
     <div className="page">
       <Head />
       <Navbar />
-      <main className="home">Work in progres..</main>
+      <main className="home">Work in progress..</main>
     </div>
   )
 }
