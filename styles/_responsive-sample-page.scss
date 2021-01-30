@@ -1,13 +1,13 @@
-@use "../utils/viewport" as viewport;
+@use "viewport" as viewport;
 
 .responsive-sample:before {
   @include viewport.mobile {
-    content: "MOBILE";
+    content: 'MOBILE';
   }
   @include viewport.tablet {
-    content: "TABLET";
+    content: 'TABLET';
   }
   @include viewport.desktop {
-    content: "DESKTOP";
+    content: 'DESKTOP';
   }
 }

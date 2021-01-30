@@ -4,14 +4,10 @@ import { useRouter } from 'next/router'
 import { moon, sun, WithIcon } from '@blog/icon'
 import { dark, light } from 'utils/colors'
 
-interface ToggleIcon {
-  onClick: () => void
-}
-
-const Sun = (args: ToggleIcon) => (
+const Sun = (args: { onClick: () => void }) => (
   <WithIcon color={light.color} icon={sun} onClick={args.onClick} size={40} />
 )
-const Moon = (args: ToggleIcon) => (
+const Moon = (args: { onClick: () => void }) => (
   <WithIcon color={dark.color} icon={moon} onClick={args.onClick} size={40} />
 )
 const divider = <span className="divider">•</span>

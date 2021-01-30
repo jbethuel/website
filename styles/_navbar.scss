@@ -1,4 +1,4 @@
-@import "../utils/colors";
+@import 'colors';
 
 .navbar {
   height: 5rem;
@@ -6,8 +6,8 @@
 
   display: grid;
   grid-template-areas:
-    "title toggle"
-    "menu .";
+    'title toggle'
+    'menu .';
 
   .title {
     grid-area: title;
@@ -34,7 +34,7 @@
       margin-bottom: 0.35rem;
 
       text-decoration: none;
-      font-size: 1.10rem;
+      font-size: 1.1rem;
     }
 
     .divider {
@@ -46,12 +46,12 @@
 
 .dark-mode .navbar {
   .menu .link {
-    color: $dark-color
+    color: $dark-color;
   }
 }
 
 .light-mode .navbar {
   .menu .link {
-    color: $light-color
+    color: $light-color;
   }
 }
