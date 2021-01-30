@@ -1,7 +1,5 @@
 import React from 'react'
-import Head from '@blog/head'
-import Navbar from '@blog/navbar'
-
+import { Header, Navbar } from '@blog/components'
 interface technology {
   title: string
   details: string[]
@@ -51,7 +49,7 @@ const items: technology[] = [
 const Work = () => {
   return (
     <div className="page">
-      <Head />
+      <Header />
       <Navbar />
       <main className="tech">
         {items.map(item => (

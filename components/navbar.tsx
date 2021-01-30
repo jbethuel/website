@@ -1,7 +1,7 @@
 import React from 'react'
 import useDarkMode from 'use-dark-mode'
 import { useRouter } from 'next/router'
-import { moon, sun, WithIcon } from '@blog/icon'
+import { moon, sun, WithIcon } from '@blog/components'
 import { dark, light } from 'utils/colors'
 
 const Sun = (args: { onClick: () => void }) => (
@@ -12,7 +12,7 @@ const Moon = (args: { onClick: () => void }) => (
 )
 const divider = <span className="divider">•</span>
 
-const Navbar = () => {
+export const Navbar = () => {
   const router = useRouter()
   const theme = useDarkMode(true)
   const isDarkMode = theme.value
@@ -47,5 +47,3 @@ const Navbar = () => {
     </nav>
   )
 }
-
-export default Navbar

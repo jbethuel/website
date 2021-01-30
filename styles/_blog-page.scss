@@ -1,0 +1,13 @@
+.blog {
+  .item {
+    cursor: pointer;
+    margin: 1rem 0rem;
+    div {
+      margin: 0.5rem 0.5rem 0.5rem 0rem;
+      padding: 0.2rem;
+      display: inline-block;
+      border: 1px solid;
+      border-radius: 5px;
+    }
+  }
+}

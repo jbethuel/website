@@ -1,11 +1,10 @@
 import React from 'react'
-import Head from '@blog/head'
-import Navbar from '@blog/navbar'
+import { Header, Navbar } from '@blog/components'
 
 const Gear = () => {
   return (
     <div className="page">
-      <Head />
+      <Header />
       <Navbar />
       <main className="gears">
         <section className="gear">

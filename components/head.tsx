@@ -8,7 +8,7 @@ interface Props {
 
 // todo tags
 // https://htmlhead.dev/
-const Header = ({
+export const Header = ({
   title = 'JBethuel - Software Engineer',
   description = 'JBethuel - Software Engineer',
   subject = 'JBethuel - Software Engineer'
@@ -72,5 +72,3 @@ const Header = ({
     <title>{title}</title>
   </Head>
 )
-
-export default Header
