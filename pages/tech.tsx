@@ -1,8 +1,8 @@
-import React from 'react'
-import { Header, Navbar } from '@blog/components'
+import React from 'react';
+import { Header, Navbar } from '@blog/components';
 interface technology {
-  title: string
-  details: string[]
+  title: string;
+  details: string[];
 }
 
 const items: technology[] = [
@@ -44,7 +44,7 @@ const items: technology[] = [
       'Fastlane'
     ]
   }
-]
+];
 
 const Work = () => {
   return (
@@ -62,7 +62,7 @@ const Work = () => {
         ))}
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

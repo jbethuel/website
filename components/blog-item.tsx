@@ -1,14 +1,20 @@
-import React from 'react'
-import { Blog } from '@blog/models'
+import React from 'react';
+import { Blog } from '@blog/models';
 
-export const BlogItem = (props: Blog & { onClick: () => void }) => {
+type Props = {
+  blog: Blog;
+  onClick: () => void;
+};
+
+export const BlogItem: React.FC<Props> = props => {
+  const { blog } = props;
   return (
     <div className="item" onClick={props.onClick}>
-      <h3>{props.title}</h3>
-      {props.tags.map(item => (
+      <h3>{blog.title}</h3>
+      {blog.tags.map(item => (
         <div>{item}</div>
       ))}
-      <p>- {props.subTitle}</p>
+      <p>- {blog.subTitle}</p>
     </div>
-  )
-}
+  );
+};

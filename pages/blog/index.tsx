@@ -1,15 +1,7 @@
-import React from 'react'
-import { BlogItem, Header, Navbar } from '@blog/components'
-import { Blog } from '@blog/models'
-
-const items: Blog[] = [
-  {
-    id: '1',
-    title: 'Sample Blog Post 😆',
-    subTitle: 'Technically its still a work in progress..',
-    tags: ['random', 'fluff']
-  }
-]
+import { BlogItem, Header, Navbar } from '@blog/components';
+import { blogItems } from 'constants/blog';
+import Link from 'next/link';
+import React from 'react';
 
 const BlogList = () => {
   return (
@@ -17,12 +9,14 @@ const BlogList = () => {
       <Header />
       <Navbar />
       <main className="blog">
-        {items.map(item => (
-          <BlogItem key={item.id} {...item} onClick={() => {}} />
+        {blogItems.map(item => (
+          <Link href={`/blog/${item.url}`} key={item.id}>
+            <BlogItem blog={item} onClick={() => {}} />
+          </Link>
         ))}
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default BlogList
+export default BlogList;

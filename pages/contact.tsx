@@ -1,5 +1,5 @@
-import React from 'react'
-import { Header, Navbar } from '@blog/components'
+import React from 'react';
+import { Header, Navbar } from '@blog/components';
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

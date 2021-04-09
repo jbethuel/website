@@ -1,5 +1,5 @@
-import React from 'react'
-import { Header, Navbar } from '@blog/components'
+import React from 'react';
+import { Header, Navbar } from '@blog/components';
 
 const Gear = () => {
   return (
@@ -19,14 +19,14 @@ const Gear = () => {
         <section className="gear">
           <h3 className="title">Peripherals</h3>
           <div className="specs">
-            <p>- Viewsonic VA2418</p>
-            <p>- Logitech K380</p>
+            <p>- Viewsonic VA2418 (24" 75hz)</p>
+            <p>- Keychron K2 (Gateron Brown)</p>
             <p>- Logitech M720</p>
           </div>
         </section>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Gear
+export default Gear;
