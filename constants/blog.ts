@@ -13,7 +13,7 @@ export const blogItems: Blog[] = [
         <h3>My favorite albums in the past 10 years</h3>
         <br />
         <p>- A Moon Shaped Pool, Radiohead 2016</p>
-        <p>- Lonerism, Tame Imapala 2012</p>
+        <p>- Lonerism, Tame Impala 2012</p>
         <p>- Tranquility Base Hotel & Casino, Arctic Monkeys 2018</p>
         <p>- Random Access Memories, Daft Punk 2013</p>
         <p>- AM, Arctic Monkeys 2013</p>
