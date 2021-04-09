@@ -6,12 +6,12 @@ import { blogItems } from 'constants/blog';
 const Blog = () => {
   const router = useRouter();
   const { slug } = router.query;
-  const blog = blogItems.find(each => each.url === slug);
+  const blog = blogItems.find(each => each.url === slug) || null;
   return (
     <div className="page">
       <Header />
       <Navbar />
-      <main className="blog" dangerouslySetInnerHTML={{ __html: blog.content }} />
+      <main className="blog" dangerouslySetInnerHTML={{ __html: blog && blog.content }} />
     </div>
   );
 };
