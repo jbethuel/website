@@ -5,11 +5,10 @@ export const blogItems: Blog[] = [
     id: '1',
     url: 'albums-2010-2020',
     title: 'My top albums in 2010-2020 🎧',
-    subTitle: 'My favorite albums in the past 10 years',
     tags: ['music', 'recommendations'],
     // lazy implementation of content for now dont judge
     content: `
-      <div>
+      <div class="albums">
         <h3>My favorite albums in the past 10 years</h3>
         <br />
         <p>- A Moon Shaped Pool, Radiohead 2016</p>

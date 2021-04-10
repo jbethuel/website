@@ -1,0 +1,23 @@
+@import 'colors';
+
+.projects {
+  .project {
+    h3,
+    p,
+    div {
+      margin-bottom: 1rem;
+    }
+    .tech-stack,
+    .link {
+      span {
+        cursor: pointer;
+      }
+      div {
+        margin: 0.3rem 0rem;
+      }
+      a {
+        color: $light-color;
+      }
+    }
+  }
+}

@@ -12,9 +12,8 @@ export const BlogItem: React.FC<Props> = props => {
     <div className="item" onClick={props.onClick}>
       <h3>{blog.title}</h3>
       {blog.tags.map(item => (
-        <div>{item}</div>
+        <div className="tag">{item}</div>
       ))}
-      <p>- {blog.subTitle}</p>
     </div>
   );
 };
