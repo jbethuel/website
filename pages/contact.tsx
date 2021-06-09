@@ -10,6 +10,7 @@ const Contact = () => {
         <p>You can always reach me out at</p>
         <div className="details">
           <p>email: jbethueldc@gmail.com</p>
+          <p>github: github.com/jbethuel</p>
         </div>
       </main>
     </div>
