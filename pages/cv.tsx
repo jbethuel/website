@@ -14,8 +14,8 @@ const CV = () => (
           Planning,
           <br />
           <br />
-          <a href="https://restoplus.com" target="_blank">
-            * https://restoplus.com
+          <a href="https://www.rise-x.io/" target="_blank">
+            * https://www.rise-x.io/
           </a>
         </p>
       </div>
