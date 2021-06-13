@@ -15,6 +15,6 @@ export const seoConfig: DefaultSeoProps = {
     url: 'https://jbethuel.com/',
     title: 'JBethuel - Software Engineer',
     description: 'JBethuel - Software Engineer',
-    site_name: 'readme.so'
+    site_name: 'jbethuel.so'
   }
 };
