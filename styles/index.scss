@@ -24,22 +24,35 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-}
-
-body.light-mode {
-  @include page.container;
   font-family: Hack, monospace;
-  background-color: $light-background;
-  color: $light-color;
   transition: background-color 0.3s ease;
 }
 
-body.dark-mode {
+:root {
+  --background: #011827;
+  --color: #fff;
+}
+
+[theme='light'] {
+  --background: #fbfbfb;
+  --color: #444b57;
+}
+
+body {
   @include page.container;
-  font-family: Hack, monospace;
-  background-color: $dark-background;
-  color: $dark-color;
-  transition: background-color 0.3s ease;
+  background-color: var(--background);
+  color: var(--color);
+}
+
+a {
+  color: var(--color);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 main {

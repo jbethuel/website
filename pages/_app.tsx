@@ -1,7 +1,15 @@
 import '../styles/index.scss';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+import { seoConfig } from 'config/next-seo.config';
+import { DefaultSeo } from 'next-seo';
+import { AppProps } from 'next/app';
+import React, { Fragment } from 'react';
+
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <Fragment>
+    <DefaultSeo {...seoConfig} />
+    <Component {...pageProps} />
+  </Fragment>
+);
 
 export default MyApp;
