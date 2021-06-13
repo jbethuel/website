@@ -1,11 +1,11 @@
-import React from 'react';
-import { Header, Navbar } from '@blog/components';
+import { Navbar } from '@blog/components';
+import { routes } from 'config';
+import React, { Fragment } from 'react';
 
 const Contact = () => {
   return (
-    <div className="page">
-      <Header />
-      <Navbar />
+    <Fragment>
+      <Navbar activeTab={routes.contact} />
       <main className="contact">
         <p>You can always reach me out at</p>
         <div className="details">
@@ -13,7 +13,7 @@ const Contact = () => {
           <p>github: github.com/jbethuel</p>
         </div>
       </main>
-    </div>
+    </Fragment>
   );
 };
 

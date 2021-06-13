@@ -1,6 +1,5 @@
 import '../styles/index.scss';
-
-import { seoConfig } from 'config/next-seo.config';
+import { seoConfig } from 'config/seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import React, { Fragment } from 'react';

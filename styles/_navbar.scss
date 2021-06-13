@@ -36,6 +36,10 @@
       font-size: 1.1rem;
     }
 
+    .link.active {
+      text-decoration: underline;
+    }
+
     .divider {
       margin-right: 0.5rem;
       margin-bottom: 0.35rem;

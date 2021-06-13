@@ -1,11 +1,11 @@
-import React from 'react';
-import { Header, Navbar } from '@blog/components';
+import { Navbar } from '@blog/components';
+import { routes } from 'config';
+import React, { Fragment } from 'react';
 
 const Gear = () => {
   return (
-    <div className="page">
-      <Header />
-      <Navbar />
+    <Fragment>
+      <Navbar activeTab={routes.gear} />
       <main className="gears">
         <section className="gear">
           <h3 className="title">Macbook Pro 2020 13"</h3>
@@ -25,7 +25,7 @@ const Gear = () => {
           </div>
         </section>
       </main>
-    </div>
+    </Fragment>
   );
 };
 

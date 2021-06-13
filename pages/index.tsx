@@ -1,32 +1,26 @@
-import React from 'react';
-import { Header, Navbar } from '@blog/components';
+import { Navbar } from '@blog/components';
+import React, { Fragment } from 'react';
 
 const Home = () => {
   return (
-    <div className="page">
-      <Header />
+    <Fragment>
       <Navbar />
       <main className="home">
         <p>
-          <b>Hi, I'm Joseph Bethuel</b> <br />
-          A software engineer based at Cagayan de Oro City, Philippines.
-          <br />
-          <br />
+          Hi! I'm <b>Joseph Bethuel</b>, Philippine-based software engineer and currently working from home.
         </p>
         <p>
-          I have been a software engineer for more than three (3) years. My first job was with a startup company which
-          was founded locally and it is currently operating in several cities here in the Philippines. I have been
-          designated as a mobile software engineer using React Native therein. Even though I am working on a mobile app,
-          I have also worked on numerous backend features.
-          <br />
-          <br />
+          I have been in the industry for almost 5 years, and a degree in Bachelor of Science in Information Technology.
+          I have been exposed in the technology for as long as I can remember. Playing computer games for ungodly hours
+          and reaped its consequences. But hey, I've made it as a career in the way.
         </p>
         <p>
-          Coding is more than just a job, it is one thing I am passionate about. It excites me and it challenges me at
-          the same time. I do my best to gradually learn and discover new things about my craft.
+          I'm currently working as a frontend developer for a startup overseas. I also know full stack development and
+          always working on something that may improve my skills and maybe even monetize it. 😅 You can find my previous
+          works below.
         </p>
       </main>
-    </div>
+    </Fragment>
   );
 };
 

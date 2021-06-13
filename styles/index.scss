@@ -3,6 +3,7 @@
 
 // pages
 @use 'responsive-sample-page';
+@use 'cv-page';
 @use 'home-page';
 @use 'gear-page';
 @use 'contact-page';
@@ -33,7 +34,7 @@
   --color: #fff;
 }
 
-[theme='light'] {
+[data-theme='light'] {
   --background: #fbfbfb;
   --color: #444b57;
 }

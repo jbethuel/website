@@ -1,5 +1,6 @@
-import React from 'react';
-import { Header, Navbar } from '@blog/components';
+import { Navbar } from '@blog/components';
+import { routes } from 'config/routes';
+import React, { Fragment } from 'react';
 interface technology {
   title: string;
   details: string[];
@@ -34,11 +35,12 @@ const items: technology[] = [
   {
     title: 'Others',
     details: [
+      'Github Actions',
       'Docker',
       'Google Cloud Build',
       'Google Cloud Bucket',
       'Google BigQuery',
-      'Monorepo (Lerna)',
+      'Monorepo (Yarn & Lerna)',
       'Firebase',
       'Netlify',
       'Fastlane'
@@ -48,20 +50,21 @@ const items: technology[] = [
 
 const Work = () => {
   return (
-    <div className="page">
-      <Header />
-      <Navbar />
+    <Fragment>
+      <Navbar activeTab={routes.tech} />
       <main className="tech">
         {items.map(item => (
-          <div className="item">
+          <div className="item" key={item.title}>
             <div className="title">{item.title}:</div>
             {item.details.map(detail => (
-              <div className="details">- {detail}</div>
+              <div className="details" key={detail}>
+                - {detail}
+              </div>
             ))}
           </div>
         ))}
       </main>
-    </div>
+    </Fragment>
   );
 };
 

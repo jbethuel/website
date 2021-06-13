@@ -1,11 +1,11 @@
-import { Header, Navbar } from '@blog/components';
-import React from 'react';
+import { Navbar } from '@blog/components';
+import { routes } from 'config';
+import React, { Fragment } from 'react';
 
 const Work: React.FC = () => {
   return (
-    <div className="page">
-      <Header />
-      <Navbar />
+    <Fragment>
+      <Navbar activeTab={routes.projects} />
       <main className="projects">
         <div className="project">
           <h3>Ulam PH</h3>
@@ -16,25 +16,46 @@ const Work: React.FC = () => {
           </p>
           <div className="tech-stack">
             <h4>Tech Stack:</h4>
-            <div>Backend/Services: Firebase (Authentication, Hosting, Firestore, Cloud Functions)</div>
+            <div>Backend/Services: Firebase (Authentication, Hosting, Cloud Functions, Google Cloud Run)</div>
             <div>Mobile App: React Native</div>
             <div>Web App: NextJS (React, in progress)</div>
           </div>
           <div className="link">
             <h4>Links:</h4>
             <div>
-              Google Play:{' '}
-              <span onClick={() => window.open('https://play.google.com/store/apps/details?id=com.ulam.ph')}>
-                https://play.google.com/store/apps/details?id=com.ulam.ph
-              </span>
+              Github:{' '}
+              <a href="https://github.com/jbethuel/ulam-ph" target="_blank">
+                https://github.com/jbethuel/ulam-ph
+              </a>
             </div>
             <div>
-              Web (in progress): <span onClick={() => window.open('https://ulam.ph')}>https://ulam.ph</span>
+              Website:{' '}
+              <a href="https://ulam.ph" target="_blank">
+                https://ulam.ph
+              </a>
+            </div>
+            <div>
+              Admin:{' '}
+              <a href="https://admin.ulam.ph" target="_blank">
+                https://admin.ulam.ph
+              </a>
+            </div>
+            <div>
+              API:{' '}
+              <a href="https://api.ulam.ph/ping" target="_blank">
+                https://api.ulam.ph/ping
+              </a>
+            </div>
+            <div>
+              Google Play:{' '}
+              <a href="https://play.google.com/store/apps/details?id=com.ulam.ph" target="_blank">
+                https://play.google.com/store/apps/details?id=com.ulam.ph
+              </a>
             </div>
           </div>
         </div>
       </main>
-    </div>
+    </Fragment>
   );
 };
 
