@@ -41,31 +41,33 @@ export const Navbar = (props: NavbarProps) => {
   const router = useRouter();
   const [theme, setTheme] = useState<Theme>('dark');
 
-  const toggle = () => {
-    const defaultTheme = document.documentElement.getAttribute(attribute) ?? 'dark';
-    const themeToBeSet = defaultTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute(attribute, themeToBeSet);
-    setTheme(themeToBeSet);
-  };
+  // const toggle = () => {
+  //   if (!typeof document) return;
 
-  const renderThemeSwitch = () => {
-    if (!typeof document) return null;
+  //   const defaultTheme = document.documentElement.getAttribute(attribute) ?? 'dark';
+  //   const themeToBeSet = defaultTheme === 'dark' ? 'light' : 'dark';
+  //   document.documentElement.setAttribute(attribute, themeToBeSet);
+  //   setTheme(themeToBeSet);
+  // };
 
-    return (
-      <div className="toggle" onClick={toggle}>
-        {theme === 'dark' ? '☀️' : '🌙'}
-      </div>
-    );
-  };
+  // const renderThemeSwitch = () => {
+  //   if (!typeof document) return null;
 
-  useEffect(() => {
-    if (!typeof document) return null;
+  //   return (
+  //     <div className="toggle" onClick={toggle}>
+  //       {theme === 'dark' ? '☀️' : '🌙'}
+  //     </div>
+  //   );
+  // };
 
-    // const mql = window.matchMedia('(prefers-color-scheme: dark)');
-    // console.log({ mql });
-    const defaultTheme = (document.documentElement.getAttribute(attribute) as Theme) ?? 'dark';
-    setTheme(defaultTheme);
-  }, [document]);
+  // useEffect(() => {
+  //   if (!typeof document) return null;
+
+  //   // const mql = window.matchMedia('(prefers-color-scheme: dark)');
+  //   // console.log({ mql });
+  //   const defaultTheme = (document.documentElement.getAttribute(attribute) as Theme) ?? 'dark';
+  //   setTheme(defaultTheme);
+  // }, [document]);
 
   return (
     <nav className="navbar">
@@ -86,7 +88,7 @@ export const Navbar = (props: NavbarProps) => {
           </Fragment>
         ))}
       </div>
-      {renderThemeSwitch()}
+      {/* {renderThemeSwitch()} */}
     </nav>
   );
 };
