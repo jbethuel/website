@@ -17,7 +17,14 @@ const Home = () => {
         <p>
           I'm currently working as a frontend developer for a startup overseas. I also know full stack development and
           always working on something that may improve my skills and maybe even monetize it. 😅 You can find my previous
-          works below.
+          works on my{' '}
+          <b>
+            <a href="https://jbethuel.com/cv">CV page</a>
+          </b>{' '}
+          and projects in{' '}
+          <b>
+            <a href="https://github.com/jbethuel">github.</a>
+          </b>
         </p>
       </main>
     </Fragment>
