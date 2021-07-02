@@ -1,9 +1,15 @@
 import React, { Fragment } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import Router, { useRouter } from 'next/router'
 import useDarkMode from 'use-dark-mode'
 import { routes } from '../config/routes'
 
 const navbarItems = [
+  {
+    path: routes.home,
+    label: 'HOME',
+  },
   {
     path: routes.cv,
     label: 'CV',
@@ -20,10 +26,10 @@ const navbarItems = [
     path: routes.contact,
     label: 'CONTACT',
   },
-  {
-    path: routes.blog,
-    label: 'BLOG',
-  },
+  // {
+  //   path: routes.blog,
+  //   label: 'BLOG',
+  // },
   {
     path: routes.gear,
     label: 'GEAR',
@@ -40,16 +46,16 @@ export const Header = () => {
         </div>
         <div className="theme-switcher" onClick={() => darkMode.toggle()}>
           {darkMode.value ? (
-            <Image src="/icons/sun.svg" height={40} width={40} />
+            <Image alt="sun" src="/icons/sun.svg" height={40} width={40} />
           ) : (
-            <Image src="/icons/moon.svg" height={40} width={40} />
+            <Image alt="moon" src="/icons/moon.svg" height={40} width={40} />
           )}
         </div>
       </header>
       <nav>
         {navbarItems.map((item, index) => (
-          <Fragment>
-            {item.label}
+          <Fragment key={index}>
+            <Link href={item.path}>{item.label}</Link>
             <span>{navbarItems.length - 1 !== index && '•'}</span>
           </Fragment>
         ))}

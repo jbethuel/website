@@ -1,8 +1,9 @@
 export enum routes {
+  home = '/',
   cv = '/cv',
   tech = '/tech',
   projects = '/projects',
   contact = '/contact',
-  blog = '/blog',
+  // blog = '/blog',
   gear = '/gear',
 }

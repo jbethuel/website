@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body>
-          <script src="noflash.js" />
+          <script async src="noflash.js" />
           <Main />
           <NextScript />
         </body>

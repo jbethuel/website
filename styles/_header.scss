@@ -1,6 +1,5 @@
 header {
-  margin: 20px;
-
+  margin: 20px 20px 0px 20px;
   display: grid;
   grid-template-columns: 0.9fr 0.1fr;
 
@@ -8,20 +7,5 @@ header {
     display: grid;
     place-items: flex-end;
     cursor: pointer;
-  }
-}
-
-nav {
-  margin: 20px;
-
-  flex-wrap: wrap;
-
-  span {
-    cursor: pointer;
-    font-size: 18px;
-    margin: 0 10px;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
