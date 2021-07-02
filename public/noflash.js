@@ -11,7 +11,7 @@
     document.body.classList.add(darkMode ? classNameDark : classNameLight);
     document.body.classList.remove(darkMode ? classNameLight : classNameDark);
   }
-
+  
   var preferDarkQuery = '(prefers-color-scheme: dark)';
   var mql = window.matchMedia(preferDarkQuery);
   var supportsColorSchemeQuery = mql.media === preferDarkQuery;

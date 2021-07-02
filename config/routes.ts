@@ -4,5 +4,5 @@ export enum routes {
   projects = '/projects',
   contact = '/contact',
   blog = '/blog',
-  gear = '/gear'
+  gear = '/gear',
 }

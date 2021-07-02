@@ -1,29 +1,27 @@
 {
-  "name": "jbethuel.com",
+  "name": "website",
   "version": "0.1.0",
   "private": true,
-  "author": {
-    "email": "jbethueldc@gmail.com",
-    "name": "jbethuel",
-    "url": "https://github.com/jbethuel"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "10.2.3",
-    "next-seo": "^4.24.0",
+    "next": "11.0.1",
+    "next-seo": "^4.26.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "1.32.5"
+    "sass": "^1.35.1",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
-    "@types/node": "^15.12.2",
-    "@types/react": "^17.0.11",
-    "prettier": "2.2.1",
-    "typescript": "^4.3.2"
+    "@types/react": "17.0.13",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1",
+    "prettier": "^2.3.2",
+    "typescript": "4.3.5"
   }
 }

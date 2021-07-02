@@ -1,4 +1,4 @@
-import { DefaultSeoProps } from 'next-seo';
+import type { DefaultSeoProps } from 'next-seo'
 
 export const seoConfig: DefaultSeoProps = {
   defaultTitle: 'JBethuel - Software Engineer',
@@ -6,8 +6,8 @@ export const seoConfig: DefaultSeoProps = {
   additionalMetaTags: [
     {
       property: 'keywords',
-      content: 'bethuel, dela cruz, jbethuel, software, engineer, fullstack, philippines'
-    }
+      content: 'bethuel, dela cruz, jbethuel, software, engineer, fullstack, philippines',
+    },
   ],
   openGraph: {
     type: 'website',
@@ -15,6 +15,6 @@ export const seoConfig: DefaultSeoProps = {
     url: 'https://jbethuel.com/',
     title: 'JBethuel - Software Engineer',
     description: 'JBethuel - Software Engineer',
-    site_name: 'jbethuel.so'
-  }
-};
+    site_name: 'jbethuel.com',
+  },
+}

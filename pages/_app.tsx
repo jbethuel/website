@@ -1,14 +1,16 @@
-import '../styles/index.scss';
-import { seoConfig } from 'config/seo';
-import { DefaultSeo } from 'next-seo';
-import { AppProps } from 'next/app';
-import React, { Fragment } from 'react';
+import '../styles/index.scss'
+import { DefaultSeo } from 'next-seo'
+import type { AppProps } from 'next/app'
+import React, { Fragment } from 'react'
+import { seoConfig } from '../config/seo'
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Fragment>
-    <DefaultSeo {...seoConfig} />
-    <Component {...pageProps} />
-  </Fragment>
-);
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <Fragment>
+      <DefaultSeo {...seoConfig} />
+      <Component {...pageProps} />
+    </Fragment>
+  )
+}
 
-export default MyApp;
+export default App
