@@ -5,15 +5,15 @@ export default function CV() {
   return (
     <Fragment>
       <Header />
-      <main>
+      <main className="cv">
         <div>
           <h3>- React Developer (Javascript, Typescript, React)</h3>
           <p>
-            Jul 2020 - Feb 2021. A startup that aims to to operate, orchestrate and optimize the worlds largest and most
+            Feb 2021 - current. A startup that aims to to operate, orchestrate and optimize the worlds largest and most
             interconnected industrial ecosystem. Software as a service: Enterprise Resource Planning, Business Ecosystem
-            Planning,
-            <br />
-            <br />
+            Planning.
+          </p>
+          <p className="link">
             <a href="https://www.rise-x.io/" target="_blank" rel="noreferrer">
               * https://www.rise-x.io/
             </a>
@@ -25,8 +25,8 @@ export default function CV() {
           <p>
             Jul 2020 - Feb 2021. Maintained and developed web application(react), order manager app (mobile). For tests,
             I&apos;ve done unit, integration and e2e. Also worked with Stripe Online Payments and CI/CD.
-            <br />
-            <br />
+          </p>
+          <p className="link">
             <a href="https://restoplus.com" target="_blank" rel="noreferrer">
               * https://restoplus.com
             </a>
@@ -40,8 +40,8 @@ export default function CV() {
             Maintained and improved &quot;Provider Mode&quot; of the app where the business owners/staff can manage the
             entity, products, and orders. Also worked on the backend features using hapijs and Paynamics as our payment
             gateway.
-            <br />
-            <br />
+          </p>
+          <p className="link">
             <a href="https://streetby.com" target="_blank" rel="noreferrer">
               * https://streetby.com
             </a>

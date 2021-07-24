@@ -7,7 +7,7 @@ export default function Projects() {
       <Header />
       <main className="projects">
         <div className="project">
-          <h3>Ulam PH</h3>
+          <h2>Ulam PH</h2>
           <p>
             Ulam in Filipino dialect means (viand). The app provides a curated list of Filipino viands that you can make
             or cook at your home. It is extremely simple to follow and the recipes can be acquired at your local public

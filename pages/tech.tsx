@@ -13,37 +13,32 @@ const items: Technology[] = [
   },
   {
     title: 'Frontend',
-    details: ['React', 'React Native', 'Next', 'Redux', 'Mobx', 'Sass'],
+    details: ['React (CRA, Next)', 'React Native', 'Redux, Zustand', 'Sass, Styled Components, Antd, Bootstrap'],
   },
   {
     title: 'Backend',
-    details: [
-      'Node (Express, Hapi, Google Cloud Run)',
-      'Mongoose (MongoDB)',
-      'GraphQL',
-      'Serverless (Google Cloud Functions)',
-    ],
-  },
-  {
-    title: 'Servers',
-    details: ['Amazon (Elastic Beanstalk)', 'Digital Ocean', 'Google Cloud'],
+    details: ['Node (Express, Hapi, Fastify)', 'MongoDB, Firestore', 'GraphQL, Swagger'],
   },
   {
     title: 'Testing',
-    details: ['Jest', 'React Testing Library', 'Sinon', 'Cypress'],
+    details: ['Jest, React Testing Library, Sinon, Cypress'],
+  },
+  {
+    title: 'Cloud',
+    details: [
+      'Amazon (Route 53, S3, Cloudfront, Certificate Manager, ECS, ECR, SNS, SES)',
+      'Digital Ocean',
+      'Google Cloud (Firebase, Cloud Run, Container Registry, Cloud Functions)',
+    ],
   },
   {
     title: 'Others',
     details: [
-      'Github Actions',
-      'Docker',
-      'Google Cloud Build',
-      'Google Cloud Bucket',
-      'Google BigQuery',
-      'Monorepo (Yarn & Lerna)',
-      'Firebase',
+      'Github Actions, Google Cloud Build',
+      'Docker, Monorepo (Yarn or Lerna)',
       'Netlify',
       'Fastlane',
+      'Notion, Jira',
     ],
   },
 ]
