@@ -26,9 +26,9 @@ const items: Technology[] = [
   {
     title: 'Cloud',
     details: [
-      'Amazon (Route 53, S3, Cloudfront, Certificate Manager, ECS, ECR, SNS, SES)',
+      'Amazon Web Services (Route 53, S3, Cloudfront, Certificate Manager, ECS, ECR, SNS, SES)',
       'Digital Ocean',
-      'Google Cloud (Firebase, Cloud Run, Container Registry, Cloud Functions)',
+      'Google Cloud Platform (Firebase, Cloud Run, Container Registry, Cloud Functions)',
     ],
   },
   {
