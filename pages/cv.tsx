@@ -7,6 +7,18 @@ export default function CV() {
       <Header />
       <main className="cv">
         <div>
+          <h3>FULL CV HERE</h3>
+          <a
+            className="link"
+            href="https://jbethuel.notion.site/jbethuel/Joseph-Bethuel-Dela-Cruz-29abe6fb974746358bd4ab070ca45f3c"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://jbethuel.notion.site
+          </a>
+        </div>
+
+        <div>
           <h3>- React Developer (Javascript, Typescript, React)</h3>
           <p>
             Feb 2021 - current. A startup that aims to to operate, orchestrate and optimize the worlds largest and most
