@@ -20,7 +20,7 @@ export default function Gear() {
           <div className="specs">
             <p>- Viewsonic VA2418 (24&quot; 75hz)</p>
             <p>- Keychron K2 (Gateron Brown)</p>
-            <p>- Logitech M720</p>
+            <p>- Logitech M720 (Triathlon)</p>
           </div>
         </section>
       </main>

@@ -10,14 +10,14 @@ export default function Projects() {
           <h2>Ulam PH</h2>
           <p>
             Ulam in Filipino dialect means (viand). The app provides a curated list of Filipino viands that you can make
-            or cook at your home. It is extremely simple to follow and the recipes can be acquired at your local public
-            market.
+            or cook at your home.
           </p>
           <div className="tech-stack">
             <h4>Tech Stack:</h4>
-            <div>Backend/Services: Firebase (Authentication, Hosting, Cloud Functions, Google Cloud Run)</div>
-            <div>Mobile App: React Native</div>
-            <div>Web App: NextJS (React, in progress)</div>
+            <div>Language: Typescript</div>
+            <div>Front End: React (CRA, Next), React Native, React Query, Zustand, Antd, Sass</div>
+            <div>Back End/Services: Auth0, Fastify(Node), MongoDB, Swagger</div>
+            <div>DevOps: Github Actions, AWS(Route 53, ACM, S3, Cloudfront, API Gateway, ECR, Lambda)</div>
           </div>
           <div className="link">
             <h4>Links:</h4>
@@ -41,8 +41,8 @@ export default function Projects() {
             </div>
             <div>
               API:{' '}
-              <a href="https://api.ulam.ph/ping" target="_blank" rel="noreferrer">
-                https://api.ulam.ph/ping
+              <a href="https://api.ulam.ph" target="_blank" rel="noreferrer">
+                https://api.ulam.ph
               </a>
             </div>
             <div>
