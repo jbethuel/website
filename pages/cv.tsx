@@ -10,7 +10,7 @@ export default function CV() {
           <h3>FULL CV HERE</h3>
           <a
             className="link"
-            href="https://jbethuel.notion.site/jbethuel/Joseph-Bethuel-Dela-Cruz-29abe6fb974746358bd4ab070ca45f3c"
+            href="https://jbethuel.notion.site/Joseph-Bethuel-Dela-Cruz-cf1007a6297f4d9687afd82caf015879"
             target="_blank"
             rel="noreferrer"
           >
