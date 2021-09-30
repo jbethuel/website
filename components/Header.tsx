@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Router, { useRouter } from 'next/router'
 import useDarkMode from 'use-dark-mode'
 import { routes } from '../config/routes'
 
@@ -26,10 +25,6 @@ const navbarItems = [
     path: routes.contact,
     label: 'CONTACT',
   },
-  // {
-  //   path: routes.blog,
-  //   label: 'BLOG',
-  // },
   {
     path: routes.gear,
     label: 'GEAR',
