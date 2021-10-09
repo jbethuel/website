@@ -6,7 +6,7 @@ export const seoConfig: DefaultSeoProps = {
   additionalMetaTags: [
     {
       property: 'keywords',
-      content: 'bethuel, dela cruz, jbethuel, software, engineer, fullstack, philippines',
+      content: 'joseph bethuel, dela cruz, jbethuel, software, engineer, fullstack, philippines',
     },
   ],
   twitter: {
