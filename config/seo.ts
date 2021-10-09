@@ -1,7 +1,7 @@
 import type { DefaultSeoProps } from 'next-seo'
 
 export const seoConfig: DefaultSeoProps = {
-  defaultTitle: 'JBethuel - Software Engineer',
+  title: 'JBethuel - Software Engineer',
   description: 'JBethuel - Software Engineer',
   additionalMetaTags: [
     {
@@ -9,6 +9,11 @@ export const seoConfig: DefaultSeoProps = {
       content: 'bethuel, dela cruz, jbethuel, software, engineer, fullstack, philippines',
     },
   ],
+  twitter: {
+    handle: 'https://twitter.com/_jbethuel',
+    site: '@site',
+    cardType: 'summary_large_image',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
