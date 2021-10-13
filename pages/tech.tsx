@@ -13,7 +13,7 @@ const items: Technology[] = [
   },
   {
     title: 'Frontend',
-    details: ['React (CRA, Next)', 'React Native', 'Redux, Redux Toolkit, MobX Zustand', 'React Query', 'Sass, Styled Components, Antd, Bootstrap'],
+    details: ['React (CRA, Next)', 'React Native', 'Redux, Redux Toolkit, MobX, Zustand', 'React Query', 'Sass, Styled Components, Antd, Bootstrap'],
   },
   {
     title: 'Backend',
