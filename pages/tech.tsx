@@ -21,7 +21,7 @@ const items: Technology[] = [
   },
   {
     title: 'Testing',
-    details: ['Jest, React Testing Library, Sinon, Cypress'],
+    details: ['Jest, React Testing Library, Sinon, Cypress, Puppeteer'],
   },
   {
     title: 'Cloud',
