@@ -7,20 +7,27 @@ export default function Gear() {
       <Header />
       <main className="gears">
         <section className="gear">
-          <h3 className="title">Macbook Pro 2020 13&quot;</h3>
+          <h3 className="title">Workstation </h3>
           <div className="specs">
-            <p>- Intel i5</p>
-            <p>- Intel Iris 645</p>
-            <p>- 8GB RAM</p>
-            <p>- 256 SSD</p>
+            <p>- Macbook Pro 2020 13&quot;</p>
           </div>
         </section>
         <section className="gear">
           <h3 className="title">Peripherals</h3>
           <div className="specs">
-            <p>- Viewsonic VA2418 (24&quot; 75hz)</p>
-            <p>- Keychron K2 (Gateron Brown)</p>
-            <p>- Logitech M720 (Triathlon)</p>
+            <p>- Viewsonic VA2418</p>
+            <p>- Keychron K2</p>
+            <p>- Logitech M720</p>
+            <p>- Beats Studio Buds</p>
+            <p>- KZ EDX IEM</p>
+          </div>
+        </section>
+        <section className="gear">
+          <h3 className="title">Gaming</h3>
+          <div className="specs">
+            <p>- Xbox Series X</p>
+            <p>- Xbox Controller Carbon Black</p>
+            <p>- PXN V9</p>
           </div>
         </section>
       </main>
