@@ -23,8 +23,8 @@ export default function Projects() {
             <h4>Links:</h4>
             <div>
               Github:{' '}
-              <a href="https://github.com/jbethuel/ulam" target="_blank" rel="noreferrer">
-                https://github.com/jbethuel/ulam
+              <a href="https://github.com/jbethuel/old-ulam" target="_blank" rel="noreferrer">
+                https://github.com/jbethuel/old-ula
               </a>
             </div>
             <div>
