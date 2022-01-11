@@ -15,7 +15,7 @@ export default function Gear() {
         <section className="gear">
           <h3 className="title">Peripherals</h3>
           <div className="specs">
-            <p>- Viewsonic VA2418</p>
+            <p>- Gigabyte G27Q</p>
             <p>- Keychron K2</p>
             <p>- Logitech M720</p>
             <p>- Beats Studio Buds</p>
