@@ -16,7 +16,7 @@ export default function Gear() {
           <h3 className="title">Peripherals</h3>
           <div className="specs">
             <p>- Gigabyte G27Q (1440p, 144hz)</p>
-            <p>- Keychron K2 (Brown Switch)</p>
+            <p>- Keychron K2 (Gateron Brown)</p>
             <p>- Logitech M720</p>
             <p>- Beats Studio Buds</p>
             <p>- KZ EDX IEM</p>
@@ -26,7 +26,6 @@ export default function Gear() {
           <h3 className="title">Gaming</h3>
           <div className="specs">
             <p>- Xbox Series X</p>
-            <p>- Xbox Controller Carbon Black</p>
             <p>- PXN V9</p>
           </div>
         </section>
