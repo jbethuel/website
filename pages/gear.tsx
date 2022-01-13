@@ -9,14 +9,14 @@ export default function Gear() {
         <section className="gear">
           <h3 className="title">Workstation </h3>
           <div className="specs">
-            <p>- Macbook Pro 2020 13&quot;</p>
+            <p>- Macbook Pro 2020 13&quot; (256GB, 8GB)</p>
           </div>
         </section>
         <section className="gear">
           <h3 className="title">Peripherals</h3>
           <div className="specs">
-            <p>- Gigabyte G27Q</p>
-            <p>- Keychron K2</p>
+            <p>- Gigabyte G27Q (1440p, 144hz)</p>
+            <p>- Keychron K2 (Brown Switch)</p>
             <p>- Logitech M720</p>
             <p>- Beats Studio Buds</p>
             <p>- KZ EDX IEM</p>
