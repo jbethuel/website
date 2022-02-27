@@ -26,17 +26,20 @@ body {
   --dark-background: #001527;
   --dark-color: #eeeeee;
   --dark-primary: #446eae;
-}
 
-body.light-mode {
-  background-color: var(--light-background);
-  color: var(--light-color);
-}
-
-body.dark-mode {
   background-color: var(--dark-background);
   color: var(--dark-color);
 }
+
+// body.light-mode {
+//   background-color: var(--light-background);
+//   color: var(--light-color);
+// }
+
+// body.dark-mode {
+//   background-color: var(--dark-background);
+//   color: var(--dark-color);
+// }
 
 #__next {
   max-width: 820px;
