@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import useDarkMode from 'use-dark-mode'
 import { routes } from '../config/routes'
 
 const navbarItems = [
@@ -32,20 +30,19 @@ const navbarItems = [
 ]
 
 export const Header = () => {
-  const darkMode = useDarkMode(true)
   return (
     <Fragment>
       <header>
         <div className="title">
           <h1>JBethuel</h1>
         </div>
-        <div className="theme-switcher" onClick={() => darkMode.toggle()}>
+        {/* <div className="theme-switcher" onClick={() => {}}>
           {darkMode.value ? (
             <Image alt="sun" src="/icons/sun.svg" height={40} width={40} />
           ) : (
             <Image alt="moon" src="/icons/moon.svg" height={40} width={40} />
           )}
-        </div>
+        </div> */}
       </header>
       <nav>
         {navbarItems.map((item, index) => (
