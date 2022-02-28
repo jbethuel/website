@@ -41,9 +41,9 @@ export const Header = () => {
         </div>
         <div className="theme-switcher" onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}>
           {theme === 'light' ? (
-            <Image alt="moon" src="https://svgur.com/i/eiJ.svg" height={40} width={40} />
-          ) : (
             <Image alt="sun" src="https://svgur.com/i/ejt.svg" height={40} width={40} />
+          ) : (
+            <Image alt="moon" src="https://svgur.com/i/eiJ.svg" height={40} width={40} />
           )}
         </div>
       </header>
