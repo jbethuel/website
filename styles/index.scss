@@ -31,15 +31,10 @@ body {
   color: var(--dark-color);
 }
 
-// body.light-mode {
-//   background-color: var(--light-background);
-//   color: var(--light-color);
-// }
-
-// body.dark-mode {
-//   background-color: var(--dark-background);
-//   color: var(--dark-color);
-// }
+[data-theme='light'] {
+  background-color: var(--light-background);
+  color: var(--light-color);
+}
 
 #__next {
   max-width: 820px;
