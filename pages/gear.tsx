@@ -9,7 +9,8 @@ export default function Gear() {
         <section className="gear">
           <h3 className="title">Workstation </h3>
           <div className="specs">
-            <p>- Macbook Pro 2020 13&quot; (256GB, 8GB)</p>
+            <p>- Mac mini M1 2020 (256GB SSD, 16GB RAM)</p>
+            <p>- Macbook Pro 2020 13&quot; (256GB SSD, 8GB RAM)</p>
           </div>
         </section>
         <section className="gear">
