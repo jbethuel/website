@@ -1,0 +1,51 @@
+main {
+  margin: 20px;
+
+  &.home {
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &.tech {
+    padding-bottom: 50px;
+    .category {
+      margin-bottom: 20px;
+    }
+  }
+
+  &.projects {
+    .project {
+      h3,
+      p,
+      div {
+        margin-bottom: 1rem;
+      }
+      .tech-stack,
+      .link {
+        span {
+          cursor: pointer;
+        }
+        div {
+          margin: 0.3rem 0rem;
+        }
+      }
+    }
+  }
+
+  &.gears {
+    font-size: 18px;
+
+    .gear {
+      margin: 1.5rem 0rem;
+
+      .title {
+        margin-top: 0.5rem;
+      }
+
+      .specs {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

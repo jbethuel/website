@@ -1,0 +1,11 @@
+header {
+  margin: 20px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 0.9fr 0.1fr;
+
+  .theme-switcher {
+    display: grid;
+    place-items: flex-end;
+    cursor: pointer;
+  }
+}
