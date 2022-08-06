@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Box } from "@mantine/core";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
@@ -31,38 +31,38 @@ const navbarItems = [
   },
 ];
 
-export const Header = () => {
+export function Header() {
   const { pathname } = useRouter();
   return (
     <Fragment>
-      <header>
-        <div className="title">
-          <h1>JBethuel</h1>
-        </div>
-        <div className="theme-switcher" style={{ cursor: "not-allowed" }}>
-          <Image
-            alt="sun"
-            src="https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/sun.svg"
-            height={40}
-            width={40}
-          />
-        </div>
-      </header>
-      <nav>
+      <Box
+        component="header"
+        sx={{
+          margin: "20px 20px 0px 20px",
+          display: "grid",
+          gridTemplateColumns: "0.9fr 0.1fr",
+          alignItems: "center",
+        }}
+      >
+        <h1>JBethuel</h1>
+      </Box>
+      <Box
+        component="nav"
+        sx={{
+          margin: "0px 20px 10px 20px",
+          display: "flex",
+          flexWrap: "wrap",
+        }}
+      >
         {navbarItems.map((item, index) => (
           <Fragment key={index}>
-            <Link
-              href={item.path}
-              className="active"
-              // className={pathname === item.path ? "active" : ""}
-            >
-              {item.label}
-              {/* {item.path === pathname && "TRUE"} */}
-            </Link>
-            <span>{navbarItems.length - 1 !== index && "•"}</span>
+            <Link href={item.path}>{item.label}</Link>
+            <Box component="span" sx={{ margin: "0px 10px" }}>
+              {navbarItems.length - 1 !== index && "•"}
+            </Box>
           </Fragment>
         ))}
-      </nav>
+      </Box>
     </Fragment>
   );
-};
+}
