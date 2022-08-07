@@ -11,25 +11,25 @@ export default function Gear() {
         <section>
           <h3>Workstation </h3>
           <Box>
-            <p>- Mac mini M1 2020 (256GB SSD, 16GB RAM)</p>
-            <p>- Macbook Pro 2020 13&quot; (256GB SSD, 8GB RAM)</p>
+            <Box>- Mac mini M1 2020 (256GB SSD, 16GB RAM)</Box>
+            <Box>- Macbook Pro 2020 13&quot; (256GB SSD, 8GB RAM)</Box>
           </Box>
         </section>
         <section>
           <h3>Peripherals</h3>
           <Box>
-            <p>- Gigabyte G27Q (1440p, 144hz)</p>
-            <p>- Keychron K2 (Gateron Brown)</p>
-            <p>- Logitech M720</p>
-            <p>- Beats Studio Buds</p>
-            <p>- KZ EDX IEM</p>
+            <Box>- Gigabyte G27Q (1440p, 144hz)</Box>
+            <Box>- Keychron K2 (Gateron Brown)</Box>
+            <Box>- Logitech M720</Box>
+            <Box>- Beats Studio Buds</Box>
+            <Box>- KZ EDX IEM</Box>
           </Box>
         </section>
         <section>
           <h3>Gaming</h3>
           <Box>
-            <p>- Xbox Series X</p>
-            <p>- PXN V9</p>
+            <Box>- Xbox Series X</Box>
+            <Box>- PXN V9</Box>
           </Box>
         </section>
       </Content>

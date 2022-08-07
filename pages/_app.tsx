@@ -15,7 +15,7 @@ function App({ Component, pageProps }: AppProps) {
         theme={{
           colorScheme: "dark",
           fontFamily:
-            "Hack, monospace, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+            "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
         }}
       >
         <GlobalStyles />

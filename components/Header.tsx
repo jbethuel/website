@@ -52,6 +52,11 @@ export function Header() {
           margin: "0px 20px 10px 20px",
           display: "flex",
           flexWrap: "wrap",
+
+          a: {
+            fontSize: "18px",
+            fontWeight: "bold",
+          },
         }}
       >
         {navbarItems.map((item, index) => (
