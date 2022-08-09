@@ -17,12 +17,12 @@ export function GlobalStyles() {
           "--dark-primary": "#446eae",
         },
         body: {
-          "background-color": "var(--dark-background)",
-          color: "var(--dark-color)",
-        },
-        "[data-theme='light']": {
           "background-color": "var(--light-background)",
           color: "var(--light-color)",
+        },
+        "body.dark": {
+          "background-color": "var(--dark-background)",
+          color: "var(--dark-color)",
         },
         a: {
           color: "inherit",

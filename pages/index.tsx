@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
 import { Text } from "@mantine/core";
+import { Fragment } from "react";
 import { Content } from "../components/Content";
 import { Header } from "../components/Header";
 

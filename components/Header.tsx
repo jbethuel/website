@@ -1,8 +1,9 @@
 import { Box } from "@mantine/core";
+import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { routes } from "../config/routes";
+import { ThemeContext } from "./ThemeProvider";
 
 const navbarItems = [
   {
@@ -32,7 +33,7 @@ const navbarItems = [
 ];
 
 export function Header() {
-  const { pathname } = useRouter();
+  const { isDarkTheme, toggleThemeHandler } = useContext(ThemeContext);
   return (
     <Fragment>
       <Box
@@ -45,6 +46,23 @@ export function Header() {
         }}
       >
         <h1>JBethuel</h1>
+        {isDarkTheme ? (
+          <Image
+            alt="sun"
+            src="https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/sun.svg"
+            height={40}
+            width={40}
+            onClick={toggleThemeHandler}
+          />
+        ) : (
+          <Image
+            alt="sun"
+            src="https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/moon.svg"
+            height={40}
+            width={40}
+            onClick={toggleThemeHandler}
+          />
+        )}
       </Box>
       <Box
         component="nav"
@@ -52,7 +70,6 @@ export function Header() {
           margin: "0px 20px 10px 20px",
           display: "flex",
           flexWrap: "wrap",
-
           a: {
             fontSize: "18px",
             fontWeight: "bold",
