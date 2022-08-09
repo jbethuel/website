@@ -17,11 +17,11 @@ export function GlobalStyles() {
           "--dark-primary": "#446eae",
         },
         body: {
-          "background-color": "var(--light-background)",
+          backgroundColor: "var(--light-background)",
           color: "var(--light-color)",
         },
         "body.dark": {
-          "background-color": "var(--dark-background)",
+          backgroundColor: "var(--dark-background)",
           color: "var(--dark-color)",
         },
         a: {
