@@ -46,23 +46,18 @@ export function Header() {
         }}
       >
         <h1>JBethuel</h1>
-        {isDarkTheme ? (
-          <Image
-            alt="sun"
-            src="https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/sun.svg"
-            height={40}
-            width={40}
-            onClick={toggleThemeHandler}
-          />
-        ) : (
-          <Image
-            alt="sun"
-            src="https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/moon.svg"
-            height={40}
-            width={40}
-            onClick={toggleThemeHandler}
-          />
-        )}
+        <Image
+          alt={isDarkTheme ? "moon" : "sun"}
+          src={
+            isDarkTheme
+              ? "https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/sun.svg"
+              : "https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/moon.svg"
+          }
+          style={{ cursor: "pointer" }}
+          height={40}
+          width={40}
+          onClick={toggleThemeHandler}
+        />
       </Box>
       <Box
         component="nav"
