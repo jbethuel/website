@@ -11,16 +11,16 @@ const navbarItems = [
     label: "HOME",
   },
   {
-    path: routes.cv,
-    label: "CV",
-  },
-  {
-    path: routes.tech,
-    label: "TECH",
+    path: routes.works,
+    label: "WORKS",
   },
   {
     path: routes.projects,
     label: "PROJECTS",
+  },
+  {
+    path: routes.tech,
+    label: "TECH",
   },
   {
     path: routes.contact,

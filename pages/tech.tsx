@@ -1,4 +1,4 @@
-import { Box } from "@mantine/core";
+import { Box, List } from "@mantine/core";
 import { Fragment } from "react";
 import { Content } from "../components/Content";
 import { Header } from "../components/Header";
@@ -11,35 +11,36 @@ interface Technology {
 const items: Technology[] = [
   {
     title: "Language",
-    details: ["Typescript (main)", "Javascript"],
+    details: ["Typescript (main)", "Javascript", "Go (currently studying)"],
   },
   {
     title: "Frontend",
     details: [
-      "React (CRA, Next)",
+      "React (CRA, Vite, Next)",
       "React Native",
-      "Redux, Redux Toolkit, MobX, Zustand",
+      "Zustand, Redux, Redux Toolkit",
       "React Query",
-      "Sass, Styled Components, Antd, Bootstrap",
+      "Sass, Styled Components, Emotion",
+      "MUI, Antd, Mantine",
+      "Jest, React Testing Library, Sinon, Playwright, Cypress, Puppeteer",
     ],
   },
   {
     title: "Backend",
     details: [
       "Node (Express, Hapi, Fastify)",
-      "MongoDB, Firestore",
+      "MongoDB, Firebase, Supabase, FireCMS",
       "GraphQL, Swagger",
     ],
   },
   {
-    title: "Testing",
-    details: ["Jest, React Testing Library, Sinon, Cypress, Puppeteer"],
-  },
-  {
     title: "Cloud",
     details: [
-      "Amazon Web Services (Route 53, S3, Cloudfront, Certificate Manager, ECS, ECR, SNS, SES)",
-      "Google Cloud Platform (Firebase, Cloud Run, Container Registry, Cloud Functions)",
+      "Amazon Web Services (Route 53, S3, Cloudfront, ECS, ECR, SNS, SES)",
+      "Google Cloud Platform (Firebase, Cloud Run, Container Registry)",
+      "Vercel",
+      "Netlify",
+      "Cloudflare",
       "Microsoft Azure",
       "Digital Ocean",
     ],
@@ -47,9 +48,9 @@ const items: Technology[] = [
   {
     title: "Others",
     details: [
+      "Monorepo (Yarn or Lerna)",
       "Github Actions, Google Cloud Build",
-      "Docker, Monorepo (Yarn or Lerna)",
-      "Netlify",
+      "Docker",
       "Fastlane",
       "Notion, Jira",
     ],
@@ -61,14 +62,19 @@ export default function Tech() {
     <Fragment>
       <Header />
       <Content>
-        {items.map((item, index) => (
-          <Box key={index}>
-            <h2>{item.title}</h2>
-            {item.details.map((detail, index) => (
-              <Box key={index}>- {detail}</Box>
-            ))}
-          </Box>
-        ))}
+        <List>
+          {items.map((item, index) => (
+            <Box key={index} sx={{ marginBottom: 10 }}>
+              <List.Item>{item.title}</List.Item>
+
+              <List withPadding>
+                {item.details.map((detail, index) => (
+                  <List.Item key={index}>{detail}</List.Item>
+                ))}
+              </List>
+            </Box>
+          ))}
+        </List>
       </Content>
     </Fragment>
   );

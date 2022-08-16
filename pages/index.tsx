@@ -1,4 +1,4 @@
-import { Text } from "@mantine/core";
+import { Paper, Text } from "@mantine/core";
 import { Fragment } from "react";
 import { Content } from "../components/Content";
 import { Header } from "../components/Header";
@@ -17,7 +17,7 @@ export default function Home() {
             I have been in the industry for almost 5 years, and a degree in
             Bachelor of Science in Information Technology. I have been exposed
             in the technology for as long as I can remember, playing computer
-            games for ungodly hours and got interested in making one.
+            games for absurd hours and got interested in making one.
           </p>
           <p>
             I&apos;m currently working as a frontend developer for a startup

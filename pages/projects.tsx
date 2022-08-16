@@ -1,62 +1,66 @@
-import { Box } from "@mantine/core";
+import { Box, List } from "@mantine/core";
 import { Fragment } from "react";
 import { Content } from "../components/Content";
 import { Header } from "../components/Header";
+
+interface Link {
+  label: string;
+  url: string;
+}
+
+interface Project {
+  title: string;
+  details: string;
+  links?: Link[];
+}
+
+const projects: Project[] = [
+  {
+    title: "jbethuel.com",
+    details: "Simple website built with Nextjs",
+    links: [
+      {
+        label: "url",
+        url: "https://jbethuel.com",
+      },
+      {
+        label: "code",
+        url: "https://github.com/jbethuel/website",
+      },
+    ],
+  },
+  {
+    title: "Ulam PH",
+    details:
+      "Ulam in Filipino dialect means (viand). The app provides a curated list of Filipino viands that you can make or cook at your home. (Open sourcing it soon)",
+  },
+];
 
 export default function Projects() {
   return (
     <Fragment>
       <Header />
       <Content>
-        <Box>
-          <h2>Ulam PH</h2>
-          <p>
-            Ulam in Filipino dialect means (viand). The app provides a curated
-            list of Filipino viands that you can make or cook at your home.
-          </p>
-          <Box>
-            <h4>Tech Stack:</h4>
-            <Box>Language: Typescript</Box>
-            <Box>
-              Front End: React (CRA, Next), React Native, React Query, Zustand,
-              Antd, Sass
+        <List>
+          {projects.map((item, index) => (
+            <Box key={index} sx={{ marginBottom: 10 }}>
+              <List.Item>
+                {item.title} - {item.details}
+              </List.Item>
+
+              <List withPadding>
+                {item.links?.map((each, index) => (
+                  <List.Item key={index}>
+                    {each.label} -{" "}
+                    <a href={each.url} target="__blank">
+                      {each.url}
+                    </a>
+                  </List.Item>
+                ))}
+              </List>
             </Box>
-            <Box>Back End/Services: Auth0, Fastify(Node), MongoDB, Swagger</Box>
-            <Box>
-              DevOps: Github Actions, AWS(Route 53, ACM, S3, Cloudfront, API
-              Gateway, ECR, Lambda)
-            </Box>
-          </Box>
-          <Box>
-            <h4>Links:</h4>
-            <Box>
-              Github:{" "}
-              <a
-                href="https://github.com/jbethuel/ulam-ph"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://github.com/jbethuel/ulam-ph
-              </a>
-            </Box>
-            <Box>
-              Website:{" "}
-              <a href="https://ulam.ph" target="_blank" rel="noreferrer">
-                https://ulam.ph
-              </a>
-            </Box>
-            <Box>
-              Dashboard:{" "}
-              <a
-                href="https://dashboard.ulam.ph"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://dashboard.ulam.ph
-              </a>
-            </Box>
-          </Box>
-        </Box>
+          ))}
+        </List>
       </Content>
     </Fragment>
   );
