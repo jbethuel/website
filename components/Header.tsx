@@ -50,8 +50,8 @@ export function Header() {
           alt={isDarkTheme ? "moon" : "sun"}
           src={
             isDarkTheme
-              ? "https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/sun.svg"
-              : "https://jbethuel-bucket.s3.ap-southeast-1.amazonaws.com/moon.svg"
+              ? "https://assets.jbethuel.com/sun.svg"
+              : "https://assets.jbethuel.com/moon.svg"
           }
           style={{ cursor: "pointer" }}
           height={40}
