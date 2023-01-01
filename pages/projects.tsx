@@ -30,9 +30,14 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Ulam PH",
-    details:
-      "Ulam in Filipino dialect means (viand). The app provides a curated list of Filipino viands that you can make or cook at your home. (Open sourcing it soon)",
+    title: "Typescript Monorepo Project",
+    details: "Sample architecture of Typescript projects across your company.",
+    links: [
+      {
+        label: "code",
+        url: "https://github.com/jbethuel/monorepo",
+      },
+    ],
   },
 ];
 
