@@ -5,30 +5,42 @@ import { Fragment, useContext } from "react";
 import { routes } from "../config/routes";
 import { ThemeContext } from "./ThemeProvider";
 
-const navbarItems = [
+interface NavbarItem {
+  path: string;
+  label: string;
+  isExternal: boolean;
+}
+
+const navbarItems: NavbarItem[] = [
   {
     path: routes.home,
     label: "HOME",
+    isExternal: false,
   },
   {
-    path: routes.works,
-    label: "WORKS",
+    path: routes.cv,
+    label: "CV",
+    isExternal: true,
   },
   {
     path: routes.projects,
     label: "PROJECTS",
+    isExternal: false,
   },
   {
     path: routes.tech,
     label: "TECH",
+    isExternal: false,
   },
   {
     path: routes.contact,
     label: "CONTACT",
+    isExternal: false,
   },
   {
     path: routes.gear,
     label: "GEAR",
+    isExternal: false,
   },
 ];
 
@@ -73,7 +85,14 @@ export function Header() {
       >
         {navbarItems.map((item, index) => (
           <Fragment key={index}>
-            <Link href={item.path}>{item.label}</Link>
+            <Link
+              href={item.path}
+              {...(item.isExternal && {
+                ...{ target: "_blank", rel: "noreferrer" },
+              })}
+            >
+              {item.label}
+            </Link>
             <Box component="span" sx={{ margin: "0px 10px" }}>
               {navbarItems.length - 1 !== index && "•"}
             </Box>
