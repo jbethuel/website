@@ -28,11 +28,6 @@ const navbarItems: NavbarItem[] = [
     isExternal: false,
   },
   {
-    path: routes.tech,
-    label: "TECH",
-    isExternal: false,
-  },
-  {
     path: routes.contact,
     label: "CONTACT",
     isExternal: false,
