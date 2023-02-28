@@ -10,10 +10,10 @@ export default function Home() {
       <Content>
         <>
           <Text>
-            I am a highly skilled software engineer with 6 years of experience
-            in the industry, specializing in ReactJS and Fullstack development.
-            Throughout my career, I have worked on a variety of projects,
-            ranging from small startups to large enterprise-level applications.
+            I am a software engineer with 6 years of experience in the industry,
+            specializing in ReactJS and Fullstack development. Throughout my
+            career, I have worked on a variety of projects, ranging from small
+            startups to large enterprise-level applications.
           </Text>
           <p>
             With extensive experience in ReactJS, I have developed and deployed
@@ -26,9 +26,10 @@ export default function Home() {
           <p>
             I have written backend systems, using NodeJS. Mainly on serverless
             infrastructure, leveraging the power of cloud computing to create
-            flexible and cost-effective solutions. I've worked with AWS Lambda,
-            API Gateway, Google Firebase and other cloud services to create
-            highly scalable systems that can adapt to changing business needs.
+            flexible and cost-effective solutions. I&apos;ve worked with AWS
+            Lambda, API Gateway, Google Firebase and other cloud services to
+            create highly scalable systems that can adapt to changing business
+            needs.
           </p>
           <p>
             I also configured CI/CD of these systems. Setting up pipelines that
@@ -45,7 +46,7 @@ export default function Home() {
             high-quality code. I am open minded believes in there are many ways
             to kill a cat (not that I have done it, or will) in terms with
             technology (as it is always progressing) and with everything really.
-            I'm always eager to learn and explore new technologies, and I'm
+            I&apos;m always eager to learn and explore new technologies, and
             excited to continue growing as a software engineer in the years to
             come.
           </p>
