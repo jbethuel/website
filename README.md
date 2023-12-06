@@ -1,4 +1,5 @@
-## [jbethuel.com](https://jbethuel.com)
+## [jbethuel.com](https://jbethuel.com) - deprecated in favor of
+[https://github.com/jbethuel/jbethuel.com](https://github.com/jbethuel/jbethuel.com)
 
 ## Technologies
 
